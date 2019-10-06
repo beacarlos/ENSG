@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <link rel="icon" href="images/icone.ico" type="image/x-icon" />
+    <title>ACON - Entre Mundos!</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="single-page news-page">
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email">
+                            e-MAIL: <a href="#">acon.ifce@gmail.com</a>
+                        </div><!-- .header-bar-email -->
+
+                        <div class="header-bar-text">
+                            <p>Contato: <span>+55 (85) 98844-4394 </span></p>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                       <div class="donate-btn">
+                            <!-- Button trigger modal -->
+                                <!--Botão de login desativado
+                               <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter">
+                                Login
+                            </button>
+                            -->
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                      <!--Formulario começa aqui-->
+                                        <form class="px-4 py-3" method="POST" action="htdoc/login.php"?">
+                                            <div class="form-group">
+                                              <h4 class="label1"> Endereço de Email</h4>
+                                              <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="" autofocus>
+                                            </div>
+                                            <div class="form-group">
+                                              <h4 class="label1">Senha</h4>
+                                              <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
+                                            </div>
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <p class="label1">Lembre-se de mim</p>
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primar">Iniciar sessão</button>
+                                          </form>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="inscricao.html">Novo por aqui? Inscreva-se</a>
+                                          <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                                        <!--termina aqui-->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <!-- Button trigger modal -->
+                                <!-- Botão de inscrição desativado
+                                 <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter2">
+                                  Inscrição
+                                </button>
+                                 -->
+                                 <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Inscreva-se</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                      <!--Formulario começa aqui-->
+                                        <form class="px-4 py-3" method="POST" action="htdoc/cadastro.php"?">
+                                            <div class="form-group">
+                                                <h4 class="label1">Nome</h4>
+                                                <input name="nome" class="form-control" placeholder="Nome Completo" type="text" required autofocus>
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Nome Social</h4>
+                                                <input name="nome_social" class="form-control" placeholder="Nome Social" type="text" id="nome_social">
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                              <h4 class="label1"> Endereço de Email</h4>
+                                              <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="">
+                                            </div>
+                                            <div class="form-group">
+                                              <h4 class="label1">Senha</h4>
+                                              <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
+                                            </div>
+                                            <div class="form-group">
+                                                <h4 class="label1">Escolaridade</h4>
+                                                <select name="escolaridade" id="escolaridade">
+                                                    <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+                                                    <option value="Ensino Fundamental">Ensino Fundamental</option>
+                                                    <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+                                                    <option value="Ensino Medio">Ensino Medio</option>
+                                                    <option value="Ensino Técnico Incompleto">Ensino Técnico Incompleto</option>
+                                                    <option value="Ensino Técnico">Ensino Técnico</option>
+                                                    <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                                                    <option value="Ensino Superior">Ensino Superior</option>
+                                                </select>
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Data de Nacimento</h4>
+                                                <input name="data_nacimento" class="form-control" placeholder="Data de nacimento" type="date">
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Endereço</h4>
+                                                <input name="endereco" class="form-control" placeholder="Endereço" type="text" required >
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Telefone</h4>
+                                                <input name="Telefone" class="form-control" placeholder="85999999999" type="tel" minlength="11" maxlength="11" required >
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <p class="label1">Lembre-se de mim</p>
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primar">Inscreva-se</button>
+                                            <button type="reset" class="btn btn-primar">Limpar</button>
+                                          </form>
+                                          
+                                        <!--termina aqui-->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                            
+                        </div><!-- .donate-btn -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/acon.png" width="180px" height="80px" alt="logo"></a>
+                        </div><!-- .site-branding -->
+
+                        <!--Ligação entre as paginas-->
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li><a href="index.html">Início</a></li>
+                                <li><a href="about.html">Sobre</a></li>
+                                <li><a href="cronograma.html">Cronograma</a></li>
+                                <li><a href="atracoes.html">Atrações</a></li>
+                                <li class="current-menu-item"><a href="competicoes.html">Competições</a></li>
+                                <li><a href="contact.html">Quem Somos?</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+                        <!--Acaba aqui-->
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header><!-- .site-header -->
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Competições</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+
+
+
+
+    <div class="parallax1"></div>
+      <div class="home-page-welcome">
+    <div class="news-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                </br>
+                    <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="header-elements">
+                                <h1 class="white">Campeonato de League of legends</h1>
+                            </div>
+
+                            
+                        </header>
+
+                        <div class="paracomp">
+                            <p> League of Legends é um jogo online competitivo que mistura a velocidade com elementos de RPG. Duas equipes de poderosos campeões, cada um com design e estilo único, lutam em diversos campos de batalha e modos de jogo. Com um elenco de campeões em constante expansão, atualizações frequentes e uma cena competitiva exuberante,
+                         League of Legends oferece diversão incessante para jogadores de todos os níveis de habilidade.</p>
+                        </div>
+                     
+                        <footer class="entry-footer">
+                            <a href="https://drive.google.com/open?id=1g52sZaigI6vc1xc5Xk7Cm35DJ9ALKAd3" target="novaAba1" class="btn gradient-bg mr-2">Baixar Edital </a>  
+                        </footer>
+                      </br> </br></br> </br> </br>
+                      
+                    </div>
+               
+        
+                
+                    
+
+                <div class="col-12 col-lg-4">
+                </div><!-- .col -->
+            
+            </div>
+         
+        </div>
+
+         <div class="parallax2"></div>
+         <div class="news-wrap">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-lg-8">
+                  </br>
+         <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+          <div class="header-elements">
+            <h1 class="white">Campeonato de CSGO</h1>
+          </div>
+
+          
+      </header>
+      <div class="paracomp">
+        <p> Lançado em 1999, o jogo passou por diversas versões até chegar ao CS:GO. Ele é um jogo da categoria FPS (first-person shooter) - tiro em primeira pessoa - e coloca cinco jogadores de cada lado, em funções diferentes: terroristas e contra-terroristas.
+             Há diversos armamentos disponíveis e o objetivo é eliminar o adversário.
+        </p>
+    </div>
+      <footer class="entry-footer">
+          <a href="https://aconifce.files.wordpress.com/2019/06/edital-csgo-acon-2019.docx.pdf" target="novaAba2" class="btn gradient-bg mr-2">Baixar Edital</a>
+      </footer>
+    </br> </br>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="parallax3"></div>
+         <div class="news-wrap">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-lg-8">
+                  </br>
+         <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+          <div class="header-elements">
+            <h1 class="white">Campeonato de Cosplay</h1>
+          </div>
+
+          
+      </header>
+
+      <div class="paracomp">
+        <p>Cosplay é uma atividade que consiste em fantasiar de forma correta, com acessórios e outros artigos, representando um determinado personagem. Esta atividade se originou nos Estados Unidos, 
+            em 1970, quando uma determinada convenção promoveu a entrada gratuita de pessoas fantasiadas de super-heróis.</p>
+    </div>
+   
+      <footer class="entry-footer">
+          <a href="https://drive.google.com/open?id=14XSfTULtPWq39UMh0Lju0MHBCORHr00b" target="novaAba3" class="btn gradient-bg mr-2">Baixar Edital</a>
+      </footer>
+    </br> </br> 
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="parallax4"></div>
+         <div class="news-wrap">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-lg-8">
+                  </br>
+         <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+          <div class="header-elements">
+            <h1 class="white">Campeonato de KPOP</h1>
+          </div>
+
+          
+      </header>
+
+      <div class="paracomp">
+        <p> K-pop (abreviação de korean pop (música pop coreana)) é um gênero musical originado na Coreia do Sul, que se caracteriza por uma grande variedade de elementos audiovisuais. Embora designe todos os gêneros de "música popular" dentro da Coreia do Sul,abrange estilos e gêneros incorporados do ocidente como
+         pop, rock, jazz, hip hop,reggae, folk, country, além de suas raízes tradicionais de música coreana.
+        </p>
+   
+      <footer class="entry-footer">
+          <a href="https://drive.google.com/open?id=1NYuZEkVcduL2XTSMZv03XnAxelfmit4b" target="novaAba4" class="btn gradient-bg mr-2">Baixar Edital</a>
+      </footer>
+    </br> </br>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="parallax5"></div>
+    <div class="news-wrap">
+     <div class="container">
+         <div class="row">
+             <div class="col-12 col-lg-8">
+             </br>
+    <header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+     <div class="header-elements">
+        <h1 class="white">Campeonato de Clash Royale</h1>
+     </div>
+
+     
+ </header>
+<div class="paracomp">
+                            <p>Jogue com várias cartas de tropas, feitiços e estruturas de defesa do Clash of Clans, além dos Royales: Príncipes, Cavaleiros, Bebês Dragões e muito mais. 
+                                Derrube o Rei e as Princesas do inimigo de cima das torres para derrotá-los e ganhar troféus, coroas e glória na arena.</p>
+                        </div>
+
+ <footer class="entry-footer">
+     <a href="#" target="novaAba5" class="btn gradient-bg mr-2">Baixar Edital</a>
+ </footer>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="parallax8"></div>
+<div class="news-wrap">
+ <div class="container">
+     <div class="row">
+         <div class="col-12 col-lg-8">
+         </br>
+<header class="entry-header d-flex flex-wrap justify-content-between align-items-center">
+ <div class="header-elements">
+    <h1 class="white">Campeonato de SwordPlay</h1>
+ </div>
+
+ 
+</header>
+<div class="paracomp">
+                        <p>Swordplay é o nome dado ao esporte que simula uma batalha entre combatentes equipados com réplicas de espadas 
+                            ou instrumentos de combate revestidos com espuma para garantir a segurança dos participantes envolvidos.</p>
+                    </div>
+
+<footer class="entry-footer">
+ <a href="https://drive.google.com/open?id=1YV8DKGjzJqrXp94AUT5TAfHzV8hEm2yc" target="novaAba10" class="btn gradient-bg mr-2">Baixar Edital</a>
+</footer>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about">
+                            <h2><a class="foot-logo" href="index.html"><img src="images/LogoEntreMundos.png" height="150" alt=""></a></h2>
+                            <h2><a class="foot-logo"target="novaAba6" href="https://ifce.edu.br/maracanau"><img src="images/LOGOdoIF.png" height="130" alt=""></a></h2>
+
+
+                            <ul class="d-flex flex-wrap align-items-center">
+                                
+                                
+                                <!--
+                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                -->
+                                <li><a target="_back" href="https://www.facebook.com/ACON.IFCE/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_back" href="https://www.youtube.com/channel/UCIkmENGKFNKRz18T2_iNEtg"><i class="fa fa-youtube"></i></a></li>
+                                <li><a target="_back3" href="https://www.instagram.com/acon_ifce/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a target="_back4"  href="https://br.pinterest.com/aamostraculturalotakuenerd/"><i class="fa fa-pinterest-p"></i></a>
+
+                            </ul>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <h2>Páginas</h2>
+
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="about.html">Sobre</a></li>
+                            <li><a href="cronograma.html">Cronograma</a></li>
+                            <li><a href="atracoes.html">Atrações</a></li>
+                            <li><a href="competicoes.html">Competições</a></li>
+                            <li><a href="contact.html">Quem Somos?</a></li>
+                              <!--<li><a href="login.html">Login</a></li>-->
+                        </ul>
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-latest-news">
+                           
+                        </div><!-- .foot-latest-news -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contatos</h2>
+
+                            <ul>
+                                <li><i class="fa fa-phone"></i><span>(85) 98844-4394</span></li>
+                                <li><i class="fa fa-envelope"></i><span>acon.ifce@gmail.com</span></li>
+                                <li><i class="fa fa-map-marker"></i><span> IFCE Maracanaú - Av. Parque Central - Distrito Industrial, Maracanaú - CE, 61919-140</span></li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+
+
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="m-0">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> Equipe de Desenvolvimento ACON</p>
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/jquery.barfiller.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

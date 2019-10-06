@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="icon" href="images/icone.ico" type="image/x-icon" />
+    <title>ACON - Entre Mundos!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="single-page about-page">
+
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email">
+                            e-MAIL: <a href="#">acon.ifce@gmail.com</a>
+                        </div><!-- .header-bar-email -->
+
+                        <div class="header-bar-text">
+                            <p>Contato: <span>+55 (85) 98844-4394 </span></p>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                       <div class="donate-btn">
+                            <!-- Button trigger modal -->
+                                <!--Botão de login desativado
+                                 <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter">
+                                  Login
+                                </button>
+                                -->
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                      <!--Formulario começa aqui-->
+                                        <form class="px-4 py-3" method="POST" action="htdoc/login.php"?">
+                                            <div class="form-group">
+                                              <h4 class="label1"> Endereço de Email</h4>
+                                              <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="" autofocus>
+                                            </div>
+                                            <div class="form-group">
+                                              <h4 class="label1">Senha</h4>
+                                              <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
+                                            </div>
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <p class="label1">Lembre-se de mim</p>
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primar">Iniciar sessão</button>
+                                          </form>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="inscricao.html">Novo por aqui? Inscreva-se</a>
+                                          <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                                        <!--termina aqui-->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <!-- Button trigger modal -->
+                                <!--Botão de inscrição desativado
+                                 <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter2">
+                                  Inscrição
+                                </button>
+                                 -->
+                                 <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Inscreva-se</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                      <!--Formulario começa aqui-->
+                                        <form class="px-4 py-3" method="POST" action="htdoc/cadastro.php"?">
+                                            <div class="form-group">
+                                                <h4 class="label1">Nome</h4>
+                                                <input name="nome" class="form-control" placeholder="Nome Completo" type="text" required autofocus>
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Nome Social</h4>
+                                                <input name="nome_social" class="form-control" placeholder="Nome Social" type="text" id="nome_social">
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                              <h4 class="label1"> Endereço de Email</h4>
+                                              <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="">
+                                            </div>
+                                            <div class="form-group">
+                                              <h4 class="label1">Senha</h4>
+                                              <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
+                                            </div>
+                                            <div class="form-group">
+                                                <h4 class="label1">Escolaridade</h4>
+                                                <select name="escolaridade" id="escolaridade">
+                                                    <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+                                                    <option value="Ensino Fundamental">Ensino Fundamental</option>
+                                                    <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+                                                    <option value="Ensino Medio">Ensino Medio</option>
+                                                    <option value="Ensino Técnico Incompleto">Ensino Técnico Incompleto</option>
+                                                    <option value="Ensino Técnico">Ensino Técnico</option>
+                                                    <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                                                    <option value="Ensino Superior">Ensino Superior</option>
+                                                </select>
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Data de Nacimento</h4>
+                                                <input name="data_nacimento" class="form-control" placeholder="Data de nacimento" type="date">
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Endereço</h4>
+                                                <input name="endereco" class="form-control" placeholder="Endereço" type="text" required >
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Telefone</h4>
+                                                <input name="Telefone" class="form-control" placeholder="85999999999" type="tel" minlength="11" maxlength="11" required >
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <p class="label1">Lembre-se de mim</p>
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primar">Inscreva-se</button>
+                                            <button type="reset" class="btn btn-primar">Limpar</button>
+                                          </form>
+                                          
+                                        <!--termina aqui-->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                            
+                        </div><!-- .donate-btn -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/acon.png" width="180px" height="80px" alt="logo"></a>
+                        </div><!-- .site-branding -->
+
+                        <!--Ligação entre as paginas-->
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li><a href="index.html">Início</a></li>
+                                <li class="current-menu-item"><a href="about.html">Sobre</a></li>
+                                <li><a href="cronograma.html">Cronograma</a></li>
+                                <li><a href="atracoes.html">Atrações</a></li>
+                                <li><a href="competicoes.html">Competições</a></li>
+                                <li><a href="contact.html">Quem Somos?</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+                        <!--Acaba aqui-->
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header><!-- .site-header -->
+
+
+    <div class="page-header"><!--Inicio do header ifce-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Quem faz a ACON acontecer ?</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+
+    <div class="welcome-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 class="entry-title">Instituto Federal de Educação, Ciência e Tecnologia do Ceará</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content mt-5">
+                            <p>O Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE) é um Instituto Federal de educação superior, básica e profissional, pluricurricular e multicampi, com atuação no Ceará. Especializado na oferta de educação profissional e tecnológica, nas diferentes modalidades de ensino, com base na conjugação de conhecimentos técnicos e tecnológicos com a prática pedagógica, atua em todas as regiões do estado por meio de seus 32 campi e atendendo mais de 33 mil alunos em uma área total instalada em mais de 5,9 milhões de m².
+                                O Índice Geral de Cursos do IFCE atualmente (2017) é 3 e o Conceito Institucional (2018) é 5. Recentes avaliações do Ministério da Educação apontam para elevação nos indicadores do Sistema Nacional de Avaliação da Educação Superior - Sinaes, como avaliações de cursos, avaliações institucionais e Exame Nacional de Desempenho de Estudantes. Últimas avaliações resultaram em várias notas 4 e 5 em cursos e uma nota 5 (nota máxima) para o Campus de Sobral, como um campus de excelência para o IFCE. Em 2009 o Instituto figurou na lista do Exame Nacional do Ensino Médio - ENEM como a melhor do Ceará na posição 148 no Brasil.
+                                A Instituição é ainda uma das que faz parte da Empresa Brasileira de Pesquisa e Inovação Industrial - Embrapii, com um polo de inovação que já aplicou mais de R$22 milhões em investimentos de pesquisa em 50 contratos e tendo participado mais de 340 alunos e cerca de 70 pesquisadores. O IFCE é o sucessor do legado que formou alunos que ajudaram a transformar a sociedade em muitos aspectos, ressaltando alguns famosos como o físico Cláudio Lenz Cesar, o cantor Falcão, o jornalista Flávio Paiva, o escritor Lira Neto, o ator Jesuíta Barbosa e o político e ex senador Inácio Arruda.</p>
+                        </div><!-- .entry-content -->
+
+                        <div class="entry-footer mt-5">
+                            <!--Continuar lendo desativado    
+                            <a href="#" class="btn gradient-bg mr-2">Continuar Lendo</a>
+                        -->
+
+                        </div><!-- .entry-footer -->
+
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                        </ol>
+                        <div class="carousel-inner" class="ajeitando">
+                                <!--img ifce -->
+                                <div class="carousel-item active">
+                                    <img src="images/ifce01.jpg"  class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/ifce02.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/ifce03.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/ifce04.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/ifce05.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/ifce06.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/ifce07.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/ifce08.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/ifce09.jpg" class="d-block w-100" alt="...">
+                                </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Sobre a ACON</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+    <div class="welcome-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 class="entry-title">Bem-vindo a ACON</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content mt-5">
+                            <p>A ACON em sua primeira edição (2018), realizou shows culturais (banda Daemon Red),
+                            palestras (mulheres gamers, Harry Potter das páginas para a tela, análise Boku no
+                            Hero Academy), minicursos (desenho, libras geek, cosmaker, língua élfica) e
+                            oficinas (papercraft, pixel art com beads, robótica sustentável). Estabeleceu
+                            parcerias com (Secretaria da Juventude, Secretaria do Esporte e Lazer, Gracom -
+                            School of Visual effects, Pixel - Escola de Design e Tecnologia), realizou
+                            divulgação nos mais diversos meios (redes sociais, escolas, sites institucionais,
+                            panfletagem) e alcançou como público, ao todo, cerca de 5.600 pessoas (880
+                            presenciais e 4.769 virtuais), superando as metas iniciais estimadas em 1.000.
+                            Delineando assim um sucesso de público, de parcerias, de divulgação e de
+                            programação, levando consigo o nome do IFCE para o público jovem (não apenas
+                            de idade e mas de alma), de pessoas que estão conectadas com tudo o que é
+
+                            inovação e tecnologia, ultrapassando a territorialidade da região de Maracanaú,
+                            abrangendo o mundo virtual e hi-tech. Uma característica marcante deste projeto é
+                            o protagonismo dos estudantes, posto que alunos de todos os eixos do campus
+                            (ciência da computação, engenharia mecânica, engenharia ambiental e sanitária,
+                            licenciatura em química e engenharia de automação) se envolveram na comissão
+                            organizadora se dividindo em várias equipes (técnica, infraestrutura, logística,
+                            segurança e comunicação) para a realização de todas as atividades e ainda
+                            conquistaram a adesão/envolvimento de inúmeros servidores e apoiadores.</p>
+                        </div><!-- .entry-content -->
+
+                        <div class="entry-footer mt-5">
+                            <!--Continuar lendo desativado    
+                            <a href="#" class="btn gradient-bg mr-2">Continuar Lendo</a>
+                        -->
+
+                        </div><!-- .entry-footer -->
+
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="images/02.JPG"alt="Primeiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/_MG_1746.jpg" alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/_MG_1575.jpg" alt="Terceiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/03.JPG" alt="Terceiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/_MG_1569.jpg" alt="Terceiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/_MG_1662.jpg"alt="Terceiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/_MG_1592.jpg" alt="Terceiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/_MG_1654.jpg" alt="Terceiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/_MG_1594.jpg" alt="Terceiro Slide">
+                        </div>
+                    </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                      </a>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+    <div class="about-stats">
+        <!-- Mundanças aqui-->
+        <div class="Acon-2018">
+            <h1>ACON - Retrospectiva 2018</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle">
+                            <strong class="d-flex justify-content-center">800 pessoas</strong>
+                        </div>
+
+                        <h3 class="entry-title">Público Total<i>&#9733;</i></h3>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle">
+                            <strong class="d-flex justify-content-center">3000</strong>
+                        </div>
+
+                        <h3 class="entry-title">Vizualizações no Instagram<i>&#9733;</i></h3>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle">
+                            <strong class="d-flex justify-content-center">18 mil pessoas</strong>
+                        </div>
+
+                        <h3 class="entry-title">Alcance de Mídia<i>&#9733;</i></h3>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle">
+                            <strong class="d-flex justify-content-center">2387</strong>
+                        </div>
+
+                        <h3 class="entry-title">Likes no Instagram<i>&#9733;</i></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about-testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="card-deck">
+                  <div class="card">
+                    <img style="height: 239px" src="images/colocado1.jpg"  class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">1ºColocado (Campeonato de league of legends)&#128540</h5>
+                      <p class="card-text">Esse homens são "arretados", arrasaram na competição de league of legends e conseguiram ser campões da primeira edição da ACON, vamos ser sinceros(a) entrou para historia&#127942&#128079</p>
+                    </div>
+                   
+                  </div>
+                  <div class="card">
+                    <img src="images/_MG_1960.jpg"  class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Competição de Cosplay&#128584</h5>
+                      <p class="card-text">Você quer Cosplay @? Pois teve competição e foi muitoooo linda &#128150 </p>
+                    </div>
+                    
+                  </div>
+                  <div class="card">
+                    <img src="images/IMG_9706.jpg"  class="card-img-top" alt="...">
+                    <div class="card-body" >
+                      <h5 class="card-title">Aula de Hapkidô&#129355</h5>
+                      <p class="card-text">O Hapkidô ou Hapkido é uma arte marcial coreana especializada em defesa pessoal, sua base é muito usada nos exércitos pelo mundo todo, o aprendizado de técnicas de ataques e defesas de socos, chutes e etc&#128526</p>
+                    </div>
+                    
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="help-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <h2>Ajude-nos no projeto ACON-Entre mundos!</h2>
+
+                    <a class="btn orange-border" href="https://www.catarse.me/acon_ifce">Contribuir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about">
+                            <h2><a class="foot-logo" href="index.html"><img src="images/LogoEntreMundos.png" height="150" alt=""></a></h2>
+                            <h2><a class="foot-logo" target="novaAba6" href="https://ifce.edu.br/maracanau"><img src="images/LOGOdoIF.png" height="130" alt=""></a></h2>
+
+
+                            <ul class="d-flex flex-wrap align-items-center">
+                                
+                                
+                                <!--
+                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                -->
+                                <li><a target="_back1" href="https://www.facebook.com/ACON.IFCE/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_back2" href="https://www.youtube.com/channel/UCIkmENGKFNKRz18T2_iNEtg"><i class="fa fa-youtube"></i></a></li>
+                                <li><a target="_back3" href="https://www.instagram.com/acon_ifce/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a target="_back4"  href="https://br.pinterest.com/aamostraculturalotakuenerd/"><i class="fa fa-pinterest-p"></i></a>
+
+                            </ul>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <h2>Páginas</h2>
+
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="about.html">Sobre</a></li>
+                            <li><a href="cronograma.html">Cronograma</a></li>
+                            <li><a href="atracoes.html">Atrações</a></li>
+                            <li><a href="competicoes.html">Competições</a></li>
+                            <li><a href="contact.html">Quem Somos?</a></li>
+                            <!--<li><a href="login.html">Login</a></li>-->
+                        </ul>
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-latest-news">
+                          
+                          
+                        </div><!-- .foot-latest-news -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contatos</h2>
+
+                            <ul>
+                                <li><i class="fa fa-phone"></i><span>(85) 98844-4394</span></li>
+                                <li><i class="fa fa-envelope"></i><span>acon.ifce@gmail.com</span></li>
+                                <li><i class="fa fa-map-marker"></i><span> IFCE Maracanaú - Av. Parque Central - Distrito Industrial, Maracanaú - CE, 61919-140</span></li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+
+
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="m-0">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> Equipe de Desenvolvimento ACON</p>
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/jquery.barfiller.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

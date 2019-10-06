@@ -1,0 +1,181 @@
+/*Modelo botao login e escrever*/
+.modeloAly{
+        border-radius: 100px;
+        border: solid 2px black;
+        background-color: gray;
+        color: white;
+
+    }
+    .modeloAly:hover{
+
+       /* background-color: #a71313;
+        color: #731abf;
+        background-color: #f8bc04;
+        border-radius: 100px;
+        color: #0a7319;*/
+        border: solid 2px gray;
+        background-color: black;
+    }
+
+    .alerta {
+         padding: 25px;
+         border: 1px solid gray;
+         border-radius: 3px;
+         margin: 10px;
+        font-size: 18px;
+}
+/*=========================== dados do menu=====================*/
+body {
+          font-family: "Lato", sans-serif;
+          transition: background-color .5s;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        .logo{
+          margin-left: auto;
+         margin-right: auto;
+         
+        }
+
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+          float: left;
+          color: white;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+/*=========================== /dados do menu=====================*/
+ header{
+          background-color: black;/*background-color: #6c206e;*/
+          text-align: center;
+        }
+form{
+  clear: both;
+  margin-top: 10px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+/*para o formulario*/
+.fidborder{
+  margin-top: 10px;
+  border: 10px #6c206e solid;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:  450px) {
+          form {width: 100%}
+        }
+.btn btn-primary btn-block{
+  width: 20%;
+}
+/*=========================== paralax=====================*/
+body, html {
+  height: 100%;
+}
+
+
+.parallax {
+  /* The image used */
+  background: url('../images/Sense.jpg');
+
+  /* Full height */
+  height: 300px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.equipe {
+color: rgb(255, 187, 0); 
+text-align: left;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 80px;
+}
+table, th, td {
+  border: 2px solid white;
+  padding: 10px;
+  
+}
+table {
+  border-spacing: 15px;
+  background-color: black;
+  color: rgb(255, 187, 0);
+  text-align:center;
+  position:relative;
+  left:20%;
+
+}
+.botao {
+
+
+position:relative;
+left: 67%;
+
+
+
+}
+.botao:active{
+  position:relative;
+  top:10px;
+  box-shadow:none;
+}
+.datas {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*=========================== paralax=====================*/
+
+.parallax01 {
+     /* The image used */
+     background-image: url("Temas/backgroundGamer.jpg");
+  
+     /* Set a specific height */
+     min-height: 300px; 
+   
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}

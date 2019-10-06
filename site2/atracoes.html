@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="icon" href="images/icone.ico" type="image/x-icon" />
+    <title>ACON - Entre Mundos!</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="single-page portfolio">
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email">
+                            e-MAIL: <a href="#">acon.ifce@gmail.com</a>
+                        </div><!-- .header-bar-email -->
+
+                        <div class="header-bar-text">
+                            <p>Contato: <span>+55 (85) 98844-4394 </span></p>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                       <div class="donate-btn">
+                            <!-- Button trigger modal -->
+                                <!--Botão de login desativado
+                               <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter">
+                                Login
+                                </button>
+                                -->
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                      <!--Formulario começa aqui-->
+                                        <form class="px-4 py-3" method="POST" action="htdoc/login.php"?">
+                                            <div class="form-group">
+                                              <h4 class="label1"> Endereço de Email</h4>
+                                              <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="" autofocus>
+                                            </div>
+                                            <div class="form-group">
+                                              <h4 class="label1">Senha</h4>
+                                              <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
+                                            </div>
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <p class="label1">Lembre-se de mim</p>
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primar">Iniciar sessão</button>
+                                          </form>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="inscricao.html">Novo por aqui? Inscreva-se</a>
+                                          <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                                        <!--termina aqui-->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                                <!-- Button trigger modal -->
+                                <!-- Botão de inscrição desativado
+                                 <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter2">
+                                  Inscrição
+                                </button>
+                                 -->
+                                 <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Inscreva-se</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                      <!--Formulario começa aqui-->
+                                        <form class="px-4 py-3" method="POST" action="htdoc/cadastro.php"?">
+                                            <div class="form-group">
+                                                <h4 class="label1">Nome</h4>
+                                                <input name="nome" class="form-control" placeholder="Nome Completo" type="text" required autofocus>
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Nome Social</h4>
+                                                <input name="nome_social" class="form-control" placeholder="Nome Social" type="text" id="nome_social">
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                              <h4 class="label1"> Endereço de Email</h4>
+                                              <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="">
+                                            </div>
+                                            <div class="form-group">
+                                              <h4 class="label1">Senha</h4>
+                                              <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
+                                            </div>
+                                            <div class="form-group">
+                                                <h4 class="label1">Escolaridade</h4>
+                                                <select name="escolaridade" id="escolaridade">
+                                                    <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+                                                    <option value="Ensino Fundamental">Ensino Fundamental</option>
+                                                    <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+                                                    <option value="Ensino Medio">Ensino Medio</option>
+                                                    <option value="Ensino Técnico Incompleto">Ensino Técnico Incompleto</option>
+                                                    <option value="Ensino Técnico">Ensino Técnico</option>
+                                                    <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                                                    <option value="Ensino Superior">Ensino Superior</option>
+                                                </select>
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Data de Nacimento</h4>
+                                                <input name="data_nacimento" class="form-control" placeholder="Data de nacimento" type="date">
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Endereço</h4>
+                                                <input name="endereco" class="form-control" placeholder="Endereço" type="text" required >
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                                <h4 class="label1">Telefone</h4>
+                                                <input name="Telefone" class="form-control" placeholder="85999999999" type="tel" minlength="11" maxlength="11" required >
+                                            </div> <!-- form-group// -->
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <p class="label1">Lembre-se de mim</p>
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primar">Inscreva-se</button>
+                                            <button type="reset" class="btn btn-primar">Limpar</button>
+                                          </form>
+                                          
+                                        <!--termina aqui-->
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                            
+                        </div><!-- .donate-btn -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/acon.png"  width="180px" height="80px" alt="logo"></a>
+                            
+                        </div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li><a href="index.html">Início</a></li>
+                                <li><a href="about.html">Sobre</a></li>
+                                <li><a href="cronograma.html">Cronograma</a></li>
+                                <li class="current-menu-item"><a href="atracoes.html">Atrações</a></li>
+                                <li><a href="competicoes.html">Competições</a></li>
+                                <li><a href="contact.html">Quem Somos?</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header><!-- .site-header -->
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Principais Atrações</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+    <div class="portfolio-wrap">
+        <div class="container">
+            <div class="row portfolio-container">
+                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
+                    <div class="portfolio-cont">
+                        <a href="https://www.instagram.com/vmzoficial/" target="novaaba20" > <img src="images/vmzCantor.jpg" id="img_circular" alt=""></a>
+
+                        <h3 id="nome">Cantor VMZ</h3>
+                        <h4 id="nome"><b>31/08 e 01/09 - Sabádo e Domingo</b></h4>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-2 portfolio-item">
+        
+                    <!--DIV VAZIA-->
+                    </div>
+          
+
+                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
+                    <div class="portfolio-cont">
+                        <a href="https://www.instagram.com/matheusallblue/" target="novaaba21"> <img src="images/matheusYoutuber.jpg" id="img_circular" alt=""></a>
+
+                        <h3 id="nome">Matheus All Blue</h3>
+                        <h4 id="nome"><b>31/08 e 01/09 - Sabádo e Domingo</b></h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
+                        <div class="portfolio-cont">
+                            <a href="https://www.instagram.com/hevilam_/" target="novaaba22" > <img src="images/hevila.jpg" id="img_circular" alt=""></a>
+    
+                            <h3 id="nome">Hevíla Mendes (Nerd Café)</h3>
+                            <h4 id="nome"><b>31/08 e 01/09 - Sabádo e Domingo</b></h4>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-6 col-lg-2 portfolio-item">
+            
+                        <!--DIV VAZIA-->
+                        </div>
+              
+    
+                    <div class="col-12 col-md-6 col-lg-5 portfolio-item">
+                        <div class="portfolio-cont">
+                            <a href="https://www.instagram.com/vgbeatsoficial/" target="novaaba23"> <img src="images/VGbeats.jpeg" id="img_circular" alt=""></a>
+    
+                            <h3 id="nome">Cantor VG BEATS</h3>
+                            <h4 id="nome"><b>31/08 e 01/09 - Sabádo e Domingo</b></h4>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 portfolio-item">
+                            <div class="portfolio-cont">
+                                <a href="https://www.instagram.com/felicinharock/" target="novaaba24" > <img src="images/FELICIA[.jpg" id="img_circular" alt=""></a>
+        
+                                <h3 id="nome">Felicia Rock</h3>
+                                <h4 id="nome"><b>31/08 e 01/09 - Sabádo e Domingo</b></h4>
+                            </div>
+                        </div>
+        
+                        <div class="col-12 col-md-6 col-lg-2 portfolio-item">
+                
+                            <!--DIV VAZIA-->
+                            </div>
+                  
+        
+                        <div class="col-12 col-md-6 col-lg-5 portfolio-item">
+                            <div class="portfolio-cont">
+                                <a href="https://www.instagram.com/daemonredoficial/" target="novaaba25"> <img src="images/LOGOdaemon.jpg" height="450px" id="img_circular" alt=""></a>
+        
+                                <h3 id="nome">DaemoN ReD</h3>
+                                <h4 id="nome"><b>31/08 e 01/09 - Sabádo e Domingo</b></h4>
+                            </div>
+                        </div>
+        
+    
+
+              
+            </div>
+
+           
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about">
+                            <h2><a class="foot-logo" href="index.html"><img src="images/LogoEntreMundos.png" height="150" alt=""></a></h2>
+                            <h2><a class="foot-logo" target="novaAba6" href="https://ifce.edu.br/maracanau"><img src="images/LOGOdoIF.png" height="130" alt=""></a></h2>
+
+                           
+
+                            <ul class="d-flex flex-wrap align-items-center">
+                                <li><a target="_back1" href="https://www.facebook.com/ACON.IFCE/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_back2" href="https://www.youtube.com/channel/UCIkmENGKFNKRz18T2_iNEtg"><i class="fa fa-youtube"></i></a></li>
+                                <li><a target="_back3" href="https://www.instagram.com/acon_ifce/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a target="_back4"  href="https://br.pinterest.com/aamostraculturalotakuenerd/"><i class="fa fa-pinterest-p"></i></a>
+
+
+                            </ul>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <h2>Páginas</h2>
+
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="about.html">Sobre</a></li>
+                            <li><a href="cronograma.html">Cronograma</a></li>
+                            <li><a href="atracoes.html">Atrações</a></li>
+                            <li><a href="competicoes.html">Competições</a></li>
+                            <li><a href="contact.html">Quem Somos?</a></li>
+                           <!--<li><a href="login.html">Login</a></li>-->
+                        </ul>
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-latest-news">
+                        
+                        </div><!-- .foot-latest-news -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contatos</h2>
+
+                            <ul>
+                                <li><i class="fa fa-phone"></i><span>(85) 98844-4394</span></li>
+                                <li><i class="fa fa-envelope"></i><span>acon.ifce@gmail.com</span></li>
+                                <li><i class="fa fa-map-marker"></i><span> IFCE Maracanaú - Av. Parque Central - Distrito Industrial, Maracanaú - CE, 61919-140</span></li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+
+                      
+                        </div><!-- .search-widget -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> Equipe de Desenvolvimento ACON</p>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='js/jquery.barfiller.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
