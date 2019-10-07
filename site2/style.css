@@ -1031,8 +1031,9 @@ ul.tabs-nav .tab-nav.active {
 .our-causes {
     position: relative;
     padding: 96px 0;
-    background: url(images/estrela.jpg)no-repeat center;
-    background-size: cover;
+    background: cover;
+    
+    
 
 
 
@@ -2063,23 +2064,17 @@ ul.tabs-nav .tab-nav.active {
 --------------------------------------------------------------*/
 .footer-widgets {
     position: relative;
-    padding: 96px 0 90px;
+    padding: 40px;
     font-weight: 500;
     color: #FFFFFF;
-    background-color: #191970;
-    background-size: cover;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 16%, rgba(25, 25, 112, 1) 57%, rgba(25, 25, 112, 1) 100%);
+    
 
 }
 
 .footer-widgets::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 101%;
-    background: rgba(22, 22, 22, .92);
+    
 }
 
 .footer-widgets h2 {
@@ -2100,12 +2095,12 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .footer-widgets ul li a {
-    color: #a2a1a1;
+    color: #fff;
     text-decoration: none;
 }
 
 .footer-widgets ul li a:hover {
-    color: #6c206e;
+    color: #191970;
 }
 
 .foot-about p {
@@ -2147,7 +2142,7 @@ ul.tabs-nav .tab-nav.active {
     margin-right: 10px;
     font-size: 18px;
     text-align: center;
-    color: rebeccapurple;
+    
 }
 
 .foot-contact ul li span {
@@ -2194,7 +2189,8 @@ ul.tabs-nav .tab-nav.active {
     padding: 30px 0;
     font-size: 12px;
     color: #FFFFFF;
-    background-color: black;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 16%, rgba(25, 25, 112, 1) 57%, rgba(25, 25, 112, 1) 100%);
     text-align: center;
 }
 
@@ -2433,4 +2429,12 @@ ul.tabs-nav .tab-nav.active {
     padding-right: 15px;
     padding-left: 15px;
 
+}
+.footer-bar2 {
+    
+    padding: 30px 0;
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color:#191970; 
+    text-align:
 }
